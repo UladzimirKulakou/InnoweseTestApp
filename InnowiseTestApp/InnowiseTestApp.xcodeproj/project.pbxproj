@@ -16,6 +16,7 @@
 		E72C35BC29F05D25005023DE /* InnowiseTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C35BB29F05D25005023DE /* InnowiseTestAppTests.swift */; };
 		E72C35C629F05D25005023DE /* InnowiseTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C35C529F05D25005023DE /* InnowiseTestAppUITests.swift */; };
 		E72C35C829F05D25005023DE /* InnowiseTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72C35C729F05D25005023DE /* InnowiseTestAppUITestsLaunchTests.swift */; };
+		E7B1D69729F1BB1100779DEA /* PokemonAPIList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B1D69629F1BB1100779DEA /* PokemonAPIList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		E72C35C129F05D25005023DE /* InnowiseTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InnowiseTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72C35C529F05D25005023DE /* InnowiseTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnowiseTestAppUITests.swift; sourceTree = "<group>"; };
 		E72C35C729F05D25005023DE /* InnowiseTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnowiseTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E7B1D69629F1BB1100779DEA /* PokemonAPIList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPIList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,9 @@
 		E72C35A429F05D23005023DE /* InnowiseTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				E7B1D69529F1B74700779DEA /* Networking */,
+				E7B1D69429F1B73E00779DEA /* Model */,
+				E7B1D69329F1B73700779DEA /* View */,
 				E72C35A529F05D23005023DE /* InnowiseTestAppApp.swift */,
 				E72C35A729F05D23005023DE /* ContentView.swift */,
 				E72C35A929F05D25005023DE /* Assets.xcassets */,
@@ -131,6 +136,28 @@
 				E72C35C729F05D25005023DE /* InnowiseTestAppUITestsLaunchTests.swift */,
 			);
 			path = InnowiseTestAppUITests;
+			sourceTree = "<group>";
+		};
+		E7B1D69329F1B73700779DEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7B1D69429F1B73E00779DEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7B1D69629F1BB1100779DEA /* PokemonAPIList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7B1D69529F1B74700779DEA /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +292,7 @@
 			files = (
 				E72C35AF29F05D25005023DE /* Persistence.swift in Sources */,
 				E72C35B229F05D25005023DE /* InnowiseTestApp.xcdatamodeld in Sources */,
+				E7B1D69729F1BB1100779DEA /* PokemonAPIList.swift in Sources */,
 				E72C35A829F05D23005023DE /* ContentView.swift in Sources */,
 				E72C35A629F05D23005023DE /* InnowiseTestAppApp.swift in Sources */,
 			);

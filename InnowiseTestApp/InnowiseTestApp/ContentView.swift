@@ -10,18 +10,18 @@ import CoreData
 
 struct ContentView: View {
     
-  
+    @StateObject var pokemonFetcher = PokemonFetcher()
     var body: some View{
         
 
         
-//        if pokemonFetch.isLoading {
-//            LoadingView()
-//        } else if pokemonFetch.errorMessage != nil {
-//            ErrorView(pokemonFetcher: pokemonFetch)
-//        } else {
-//            PokemonsListView(pokemons: pokemonFetch.pokemons)
-//        }
+        if pokemonFetcher.isLoading {
+            LoadingView()
+        } else if pokemonFetcher.errorMessage != nil {
+            ErrorView(pokemonFetcher: pokemonFetcher)
+        } else {
+            PokemonListView()
+        }
 //        Text("Hello")
     }
 }
